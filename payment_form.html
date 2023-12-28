@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+<body>
+    <form action="">                 <!--To make forms we use form tag. 
+                                    In Action we give server location at this present time we have no server thatswhy we keep it empty.-->
+        <h1> Payment Form</h1> 
+
+
+ <h2> Contact Information</h2>
+        <p>Required fields are followed by *></p>
+
+        <p>Name:*<input type="text" name='Name' required> </p><!--Name: it will display name . Type text: it will display text box.
+               input is used to giving specific type. name will always unique   -->
+        <fieldset>
+        <legend>Gender </legend>
+                 <!--for radio button for same type of data input we give same value to name -->
+        <p>Male *<input type="radio" name="Gender" required id=" Gender"> </p>
+        <p> Female *<input type="radio" name="Gender" id="Gender"></p>
+
+        </fieldset> <!-- To rap words ; legend:- to give name of group-->
+
+
+    <p> Adress: <textarea input="text" name="Adress" id="Adress" column="100" rows="7"></textarea></p>
+     <!-- Textarea to make big space area. -->
+
+    <p>Email: *<input type=" email" name="Email" required> </p><!-- input type email to give email:-{it tells automatocally email is right or wrong}-->
+
+    <p> Pincode: * <input type="number" name="Pincode" id="Pincode" required></p> <!-- number to take data of type number-->
+    
+
+<h2> Payment Information</h2>
+<p> Cardtype: 
+    <select name ="Cardtype" id="Cardtype"> 
+        <option value="">--select a Cardtype</option><!--in this line we are leaving value empty as we want 
+    to display select card type on sceen-->
+    <option value="visa">visa</option>
+    <option value="Rupay">Rupay</option>
+    <option value="master card">master card</option>
+    </select><!-- to make dropdown list,red letter go in server ,while white one will be show on display-->
+    <p> Cardnumber: *<input type="number" name="Cardnumber" id="Cardnumber" required></p>
+    <p> Expiration Date: *<input type="date" name="Expiration Date" id="Expiration Date" required></p>
+    <!-- password used to hide cvv information-->
+    <p> CVV: *<input type="password" name="CVV" id="CVV" required></p>
+    <input type="submit" value="Pay now"> <!-- submit is used for submitting button formation
+    here in this case value will display on screen-->
+
+   
+
+    <!-- date selecter is used to select date -->
+    
+
+
+    </form>
+
+    
+</body>
+</html>
